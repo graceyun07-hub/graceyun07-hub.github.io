@@ -130,8 +130,8 @@ img {
   padding: 48px 22px 34px;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgb(255 248 239 / 0) 58%, rgb(255 248 239 / 0.72) 100%),
-    linear-gradient(145deg, #fff8ef 0%, #f1ddc9 54%, #d7ebe5 100%);
+    linear-gradient(180deg, rgb(255 252 247 / 0.96) 0%, rgb(250 241 229 / 0.92) 42%, rgb(236 219 200 / 0.92) 74%, rgb(224 235 229 / 0.95) 100%),
+    linear-gradient(145deg, #fffaf4 0%, #ead2bb 54%, #cddfd8 100%);
   color: var(--navy);
   text-align: center;
 }
@@ -142,7 +142,7 @@ img {
   inset: auto 0 -46px;
   z-index: -1;
   height: 176px;
-  background: linear-gradient(180deg, rgb(21 50 74 / 0.08), rgb(213 139 115 / 0.06));
+  background: linear-gradient(180deg, rgb(21 50 74 / 0.1), rgb(201 147 71 / 0.08));
   transform: skewY(-4deg);
 }
 
@@ -155,7 +155,7 @@ img {
 }
 
 .hero .eyebrow {
-  color: #98662b;
+  color: #8c602a;
 }
 
 .portrait-wrap {
@@ -164,8 +164,8 @@ img {
   margin: 18px auto;
   padding: 5px;
   border-radius: 50%;
-  background: linear-gradient(140deg, #efbf63, #fff0bd);
-  box-shadow: 0 18px 34px rgb(104 67 34 / 0.18);
+  background: linear-gradient(140deg, #d7aa55, #fff1bf);
+  box-shadow: 0 22px 42px rgb(104 67 34 / 0.2);
 }
 
 .portrait-wrap img {
@@ -178,17 +178,21 @@ img {
 }
 
 .hero h1 {
-  margin: 18px 0 2px;
-  font-size: 40px;
-  line-height: 1.18;
+  margin: 20px 0 4px;
+  color: #102b42;
+  font-family: "Noto Serif KR", serif;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.14;
   letter-spacing: 0;
+  text-shadow: 0 2px 0 rgb(255 255 255 / 0.5);
 }
 
 .role {
   margin: 0;
-  color: #385168;
+  color: #40576a;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .role span {
@@ -202,16 +206,18 @@ img {
 
 .hero-intro {
   margin: 28px 0 12px;
-  font-size: 17px;
+  color: #102b42;
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1.8;
+  line-height: 1.78;
   letter-spacing: 0;
   word-break: keep-all;
 }
 
 .region {
   margin: 0;
-  color: #62707a;
+  color: #68727b;
   font-size: 12px;
 }
 

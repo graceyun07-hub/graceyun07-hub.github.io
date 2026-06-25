@@ -8,3 +8,28 @@ document.querySelectorAll('.accordion-list details').forEach((item) => {
     });
   });
 });
+
+document.querySelectorAll('.email-link').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const webmailUrl = link.dataset.webmail;
+    if (!webmailUrl) return;
+
+    event.preventDefault();
+    let openedExternalApp = false;
+
+    const markOpened = () => {
+      openedExternalApp = true;
+    };
+
+    window.addEventListener('blur', markOpened, { once: true });
+    document.addEventListener('visibilitychange', markOpened, { once: true });
+
+    window.location.href = link.href;
+
+    window.setTimeout(() => {
+      if (!openedExternalApp && document.visibilityState === 'visible') {
+        window.location.href = webmailUrl;
+      }
+    }, 900);
+  });
+});

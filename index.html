@@ -114,6 +114,49 @@
         <p class="section-kicker">LET'S TALK</p>
         <h2 id="cta-title">사업의 다음 장면,<br>함께 이야기해요.</h2>
         <p>세무회계, 경영컨설팅, 소상공인 컨설팅이 필요하시면 편하게 연락해 주세요.</p>
+        <form class="consultation-form" id="consultation-form" aria-label="상담 문의 접수">
+          <div class="form-grid">
+            <label class="form-field">
+              <span>고객 이름</span>
+              <input type="text" name="customer_name" autocomplete="name" minlength="2" maxlength="80" placeholder="성함을 입력해 주세요" required>
+            </label>
+            <label class="form-field">
+              <span>고객 연락처</span>
+              <input type="tel" name="customer_phone" autocomplete="tel" minlength="7" maxlength="30" placeholder="010-0000-0000" required>
+            </label>
+            <label class="form-field">
+              <span>사업자 유형</span>
+              <select name="business_type" required>
+                <option value="">선택해 주세요</option>
+                <option value="pre_founder">예비창업자</option>
+                <option value="sole_proprietor">개인사업자</option>
+                <option value="corporation">법인사업자</option>
+                <option value="other">기타</option>
+              </select>
+            </label>
+            <label class="form-field">
+              <span>문의 분야</span>
+              <select name="inquiry_category" required>
+                <option value="">선택해 주세요</option>
+                <option value="government_support">정부지원사업</option>
+                <option value="business_plan">사업계획서</option>
+                <option value="management_diagnosis">경영진단</option>
+                <option value="estimate_request">견적 문의</option>
+                <option value="other">기타</option>
+              </select>
+            </label>
+            <label class="form-field form-field-full">
+              <span>문의 내용</span>
+              <textarea name="message" minlength="5" maxlength="2000" rows="5" placeholder="상담받고 싶은 내용을 간단히 적어 주세요" required></textarea>
+            </label>
+          </div>
+          <label class="form-consent">
+            <input type="checkbox" name="privacy_agreed" required>
+            <span>상담 답변을 위한 개인정보 수집 및 이용에 동의합니다.</span>
+          </label>
+          <button class="button button-primary button-wide" type="submit"><span aria-hidden="true">✦</span> 상담 문의 접수하기</button>
+          <p class="form-status" id="consultation-form-status" role="status" aria-live="polite"></p>
+        </form>
         <a class="button button-primary button-wide email-link" href="mailto:graceyun07@gmail.com?subject=%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%AC%B8%EC%9D%98" data-webmail="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=graceyun07%40gmail.com&amp;su=%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%AC%B8%EC%9D%98" aria-label="홈페이지 문의 메일 보내기" title="홈페이지 문의 메일 보내기"><span aria-hidden="true">✦</span> 홈페이지 문의하기</a>
       </section>
     </main>
@@ -130,6 +173,6 @@
       <p class="copyright">© <span id="year"></span> KM MANAGEMENT CONSULTING</p>
     </footer>
   </div>
-  <script src="script.js?v=email-fallback"></script>
+  <script src="script.js?v=supabase-connect"></script>
 </body>
 </html>
